@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Small Business Administration</title>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+  
+<style>
+
+	nav {
+		background-color: #FFF;
+	}
+	
+	.IndustryBus {
+					/*border: 1px ##ccc solid;*/
+					padding: .75em 10px;
+				}
+				
+				.Experience1 {
+					border: 1px ##ccc solid;
+					padding: .7em 10px;
+				}
+				.Experience2 {
+					border: 1px ##ccc solid;
+					padding: .75em 10px;
+				}
+
+	nav .deskop-mini-nav a {
+		color: #002e6d;
+		font-size: 13px;
+	}
+
+	nav .main-menu a {
+		color: #00bfff;
+		font-weight: bold;
+	}
+	
+	nav a {
+		text-decoration: none;
+	}
+	
+	nav .menus ul {
+		padding: 0;
+		margin-bottom: 12px;
+	}
+	
+	@media screen and (min-width: 1024px) {
+		
+		nav {
+			height: 116px;
+			width: 100%;
+			/*width: calc(100% - 60px);*/
+			/*margin: 0 auto;*/
+			padding-left: 30px;
+			padding-right: 30px;
+			vertical-align: bottom;
+		}
+		
+		nav .logo {
+			float: left;
+			display: inline;
+			height: 56px;
+			margin: 30px 0px;
+
+		}
+
+		nav .logo img {
+			max-height: 100%;
+			max-width: 100%;
+		}
+		
+		nav .menus {
+			float: right;
+			display: inline;
+			text-align: right;
+			margin-top: 30px;
+		}
+		
+		.deskop-mini-nav li, .main-menu li {
+			display: inline;
+			margin-left: 12px;
+		}
+		
+	}
+	@media screen and (max-width: 1023px) {
+		
+		nav {
+			max-width: 768px;
+			margin: 1em auto;
+			text-align: center;
+		}
+		
+		nav .deskop-mini-nav {
+			display: none;
+		}
+		
+		nav ul li, nav ul li a {
+			display: block;
+		}
+		
+		nav ul li a {
+			padding: 1em;
+			border: 1px solid #efefef;
+		}
+		
+		
+	}
+</style>
+  <nav>
+		<a tabindex="-1" href="https://www.sba.gov" class="logo">
+			<img alt="Small Business Administration" src="logo.png">
+		</a>
+		<div class="menus">
+			<ul class="deskop-mini-nav" aria-label="mini-navigation">
+				<li>
+					<a href="https://es.sba.gov/" tabindex="0" id="deskop-mini-nav-1">SBA.gov/contracting</a>
+				</li>
+				<li>
+					<a href="https://www.sba.gov/for-lenders" tabindex="0" id="deskop-mini-nav-2">WhiteHouse.gov</a>
+				</li>
+				<li>
+					<a href="https://www.sba.gov/about-sba/sba-newsroom" tabindex="0" id="deskop-mini-nav-3">Regulations.gov</a>
+				</li>
+				<li>
+					<a href="https://www.sba.gov/about-sba/what-we-do/contact-sba" tabindex="0" id="deskop-mini-nav-4">Contact Us</a>
+				</li>
+				<li>
+					<a href="https://www.sba.gov/user/register" tabindex="0" id="deskop-mini-nav-register">BusinessUSA.gov</a>
+				</li>
+				<li>
+					<a href="https://www.sba.gov/user/login" tabindex="0" id="deskop-mini-nav-login">USA.gov</a>
+				</li>
+			</ul>
+			<ul class="main-menu">
+				<li>
+					<a id="sub-menu-0-title" href="https://www.sba.gov/business-guide">Notifications</a>
+				</li>
+				<li>
+					<a id="sub-menu-5-title" href="https://www.sba.gov/about-sba">About SBA</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+ <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+               
+                <ul class="nav side-menu">
+                 <div class="menu_section">
+            
+                <ul class="nav side-menu">
+                
+                  <li><a href="form_LandingPage.html"><i class="fa fa-laptop"></i> <span class="label label-success pull-right">   Application Landing Page </span></a></li>
+                 </ul>
+				 </div>
+              
+                 <li><a><i class="fa fa-edit"></i> Client Request <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="form_ClientRequest.html">Client Information</a></li>
+                    </ul>
+                  </li>
+                 <li><a><i class="fa fa-edit"></i> Client Intake <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="form_ClientIntake.html">Background Information</a></li>
+                      <li><a href="form_ClientIntake.html">Business Information</a></li>
+                      <li><a href="form_ClientIntake.html">Counseling and Assistance</a></li>
+                    </ul>
+                  </li>
+				  <li><a><i class="fa fa-edit"></i> Counselor Record <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="form_CounselorRecord.html">Contribution</a></li>
+                      <li><a href="form_CounselorRecord.html">Counselor Information</a></li>
+                      <li><a href="form_CounselorRecord.html">Counselor's Notes</a></li>
+                    </ul>
+                  </li>
+                  
+                  
+                </ul>
+           
+              </div>
+
+            </div>
+                        <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+           
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="">
+            <div class="page-title">
+              <div class="title_left">
+                <h3>Counseling Information Form</h3>
+              </div>
+				<div class="title_right">
+                <div class="col-md-5 col-sm-5  form-group row pull-right top_search">
+                  <div class="input-group">
+                    <h7>OMB Approval No.: 3245-0324</h7>
+					<h7>Expiration Date    : 10/31/2020</h7>
+					<h7>SBA Form 641     (10/24/2017)</h7>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="row">
+
+              <div class="col-md-12 col-sm-12 ">
+                <div class="x_panel">
+                  <div class="x_title">
+                    
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+
+                    <!-- Smart Wizard -->
+                    <div id="wizard" class="form_wizard wizard_horizontal">
+                      <ul class="wizard_steps">
+                        <li>
+                          <a href="#step-1">
+                            <span class="step_no">I</span>
+                            <span class="step_descr">
+                                              <small>Part I</small>
+                                          </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#step-2">
+                            <span class="step_no">II</span>
+                            <span class="step_descr">
+                                              <small>Part II</small>
+                                          </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#step-3">
+                            <span class="step_no">III</span>
+                            <span class="step_descr">
+                                              <small>Part III</small>
+                                          </span>
+                          </a>
+                        </li>
+                      </ul>
+                      <div id="step-1">
+					   
+							<div class="x_panel">
+						  <div class="x_title">
+							<h2>Client Information </h2>
+                   
+								<div class="clearfix"></div>
+							</div>
+					<div class="x_content">
+                        <form id="demo-form" data-parsley-validate>
+                      <label for="fullname">Name of the Office Providing the Service * :</label>
+                      <input type="text" id="fullname" class="form-control" name="fullname" required />
+					<br/>
+                     <label>Type of Client:</label>
+                      <p style="padding: 5px;">
+                        <input type="checkbox" name="hobbies[]" id="hobby1" value="ski" data-parsley-mincheck="2" required class="flat" /> Face to Face
+                        <br />
+
+                        <input type="checkbox" name="hobbies[]" id="hobby2" value="run" class="flat" /> Online
+                        <br />
+						<input type="checkbox" name="hobbies[]" id="hobby4" value="sleep" class="flat" /> Telephone
+                        <br />
+                        
+                        </p>
+						<br/>
+                     <label for="email">City of Office Location:</label>
+                      <input type="phone" id="phone" class="form-control" name="phone" data-parsley-trigger="change" /><br/>
+					<br/>
+					<label for="email">State of Office Location:</label>
+                      <input type="phone" id="phone" class="form-control" name="phone" data-parsley-trigger="change" /><br/>
+					<br/>
+									
+                    </form>
+						</div>
+						</div>
+						
+                      </div>
+                     
+                      
+
+                    </div>
+                    <!-- End SmartWizard Content -->
+
+
+
+
+
+                    
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+   <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- jQuery Smart Wizard -->
+    <script src="../vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+
+	
+  </body>
+</html>

@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Small Business Administration</title>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+  
+<style>
+
+	nav {
+		background-color: #FFF;
+	}
+	
+	.IndustryBus {
+					/*border: 1px ##ccc solid;*/
+					padding: .75em 10px;
+				}
+				
+				.Experience1 {
+					border: 1px ##ccc solid;
+					padding: .7em 10px;
+				}
+				.Experience2 {
+					border: 1px ##ccc solid;
+					padding: .75em 10px;
+				}
+
+	nav .deskop-mini-nav a {
+		color: #686868;
+		font-size: 13px;
+	}
+
+	nav .main-menu a {
+		color: #002e6d;
+		font-weight: bold;
+		font-size: 16px;
+	}
+	
+	nav a {
+		text-decoration: none;
+	}
+	
+	nav .menus ul {
+		padding: 0;
+		margin-bottom: 12px;
+	}
+	
+	@media screen and (min-width: 1024px) {
+		
+		nav {
+			height: 116px;
+			width: 100%;
+			/*width: calc(100% - 60px);*/
+			/*margin: 0 auto;*/
+			padding-left: 30px;
+			padding-right: 30px;
+			vertical-align: bottom;
+		}
+		
+		nav .logo {
+			float: left;
+			display: inline;
+			height: 56px;
+			margin: 30px 0px;
+
+		}
+
+		nav .logo img {
+			max-height: 100%;
+			max-width: 100%;
+		}
+		
+		nav .menus {
+			float: right;
+			display: inline;
+			text-align: right;
+			margin-top: 30px;
+		}
+		
+		.deskop-mini-nav li, .main-menu li {
+			display: inline;
+			margin-left: 12px;
+		}
+		
+	}
+	@media screen and (max-width: 1023px) {
+		
+		nav {
+			max-width: 768px;
+			margin: 1em auto;
+			text-align: center;
+		}
+		
+		nav .deskop-mini-nav {
+			display: none;
+		}
+		
+		nav ul li, nav ul li a {
+			display: block;
+		}
+		
+		nav ul li a {
+			padding: 1em;
+			border: 1px solid #efefef;
+		}
+		
+		
+	}
+</style>
+<style>
+	
+	footer {
+		width: 100%;
+		/*margin: 30px;*/
+		/*padding-left:30px;*/
+		/*padding-right:30px;*/
+		margin: 0 auto;
+		display: flex;
+		text-align: center;
+		background-color: #e8e8e8;
+		flex-wrap: wrap;
+		font-size: 13px;
+		color: #333;
+	}
+	
+	footer section {
+		width: 100%;
+		text-align: right;
+		margin: 10px 30px;
+		padding: 20px 0px 20px 20px; 
+		border-top: 1px rgb(196, 196, 196) solid;
+		font-size: 13px;
+	}
+	
+	footer section span {
+		border-right: 1px rgb(196, 196, 196) solid;
+		margin : 0px 5px;
+	}
+	
+	footer ul {
+		display: inline-block;
+		padding: ;
+		margin: 30px;
+		/*width: 250px;*/
+		min-width: 200px;
+		vertical-align: top;
+		flex: 1;
+	}
+	
+	footer ul li {
+		display: block;
+		/*width: 150px;*/
+		text-align: left;
+	}
+	
+	footer ul li:first-of-type {
+		font-weight: bold;
+		font-size: 18px;
+	}
+	
+	footer ul li a {
+		text-decoration: none;
+		color: #333
+	}
+	
+	@media screen and (min-width: 1024px) {
+		
+		footer ul li {
+			margin: .5rem;
+		}
+		
+	}
+	@media screen and (max-width: 1023px) {
+		
+	}
+</style>
+  <nav>
+		<a tabindex="-1" href="https://www.sba.gov" class="logo">
+			<img alt="Small Business Administration" src="logo.png">
+		</a>
+		<div class="menus">
+			<ul class="deskop-mini-nav" aria-label="mini-navigation">
+				<li>
+					<a href="https://es.sba.gov/" tabindex="0" id="deskop-mini-nav-1">SBA.gov/contracting</a>
+				</li>
+				<li>
+					<a href="https://www.sba.gov/for-lenders" tabindex="0" id="deskop-mini-nav-2">WhiteHouse.gov</a>
+				</li>
+				<li>
+					<a href="https://www.sba.gov/about-sba/sba-newsroom" tabindex="0" id="deskop-mini-nav-3">Regulations.gov</a>
+				</li>
+				<li>
+					<a href="https://www.sba.gov/about-sba/what-we-do/contact-sba" tabindex="0" id="deskop-mini-nav-4">Contact Us</a>
+				</li>
+				<li>
+					<a href="https://www.sba.gov/user/register" tabindex="0" id="deskop-mini-nav-register">BusinessUSA.gov</a>
+				</li>
+				<li>
+					<a href="https://www.sba.gov/user/login" tabindex="0" id="deskop-mini-nav-login">USA.gov</a>
+				</li>
+			</ul>
+			<ul class="main-menu">
+				<li>
+					<a id="sub-menu-0-title" href="https://www.sba.gov/business-guide">Notifications</a>
+				</li>
+				<li>
+					<a id="sub-menu-5-title" href="https://www.sba.gov/about-sba">About SBA</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	
+	
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+			<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+               
+                <ul class="nav side-menu">
+                 <div class="menu_section">
+            
+					<ul class="nav side-menu">
+					
+					  <li><a href="form_LandingPage.html"><i class="fa fa-laptop"></i> <span class="label label-success pull-right">   Application Landing Page </span></a></li>
+					 </ul>
+				 </div>
+              
+                 <li><a><i class="fa fa-edit"></i> Client Request <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="form_ClientRequest.html">Client Information</a></li>
+					  <li><a href="form_ClientRequest.html">Client Address</a></li>
+					  <li><a href="form_ClientRequest.html">Appointment</a></li>
+                    </ul>
+                  </li>
+                 <li><a><i class="fa fa-edit"></i> Client Intake <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="form_ClientIntake.html">Background Information</a></li>
+                      <li><a href="form_ClientIntake.html">Business Information</a></li>
+                      <li><a href="form_ClientIntake.html">Counseling and Assistance</a></li>
+                    </ul>
+                  </li>
+				  <li><a><i class="fa fa-edit"></i> Counselor Record <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="form_CounselorRecord.html">Contribution</a></li>
+                      <li><a href="form_CounselorRecord.html">Counselor Information</a></li>
+                      <li><a href="form_CounselorRecord.html">Counselor's Notes</a></li>
+                    </ul>
+                  </li>
+                  
+                  
+                </ul>
+           
+				</div>
+
+            </div>
+                        <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+           
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+         <!-- top navigation -->
+        <div class="top_nav">
+            <div class="nav_menu">
+                <div class="nav toggle">
+                  <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                </div>
+               
+                <ul class=" navbar-right">
+				
+					<li class="nav-item dropdown open" style="padding-left: 35px;">
+					
+                    <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                     My Account
+                    </a>
+					
+                    <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item"  href="javascript:;"> Profile</a>
+                        <a class="dropdown-item"  href="javascript:;">
+                          <span class="badge bg-red pull-right">50%</span>
+                          <span>Settings</span>
+                        </a>
+                    <a class="dropdown-item"  href="javascript:;">Help</a>
+                      <a class="dropdown-item"  href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                    </div>
+					
+					 <li role="presentation" class="nav-item dropdown open" style="padding-left: 35px;">
+                    <a href="javascript:;" class="dropdown-toggle info-number" id="navbarDropdown1" data-toggle="dropdown" aria-expanded="false">
+                      <i class="fa fa-envelope-o"></i>
+                      <span class="badge bg-green">6</span>
+                    </a>
+                    <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
+                      <li class="nav-item">
+                        <a class="dropdown-item">
+                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span>
+                            <span>User</span>
+                            <span class="time">3 mins ago</span>
+                          </span>
+                          <span class="message">
+                           Text...
+                          </span>
+                        </a>
+                      </li>
+                     
+                      <li class="nav-item" >
+                        <a class="dropdown-item">
+                          <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                          <span>
+                            <span>User</span>
+                            <span class="time">3 mins ago</span>
+                          </span>
+                          <span class="message">
+                            Text...
+                          </span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <div class="text-center">
+                          <a class="dropdown-item">
+                            <strong>See All Alerts</strong>
+                            <i class="fa fa-angle-right"></i>
+                          </a>
+                        </div>
+                      </li>
+					  
+                    </ul>
+                  </li>
+					<li class="nav-item dropdown open" style="padding-left: 35px;">
+                 
+                     Documents
+                    </li>
+					<li class="nav-item dropdown open" style="padding-left: 35px;">
+                 
+                     Messages
+                    </li>
+					<li class="nav-item dropdown open" style="padding-left: 35px;">
+                 
+                     Business
+                    </li>
+					<li class="nav-item dropdown open" style="padding-left: 35px;">
+                 
+                     Application
+                    </li>
+					<li class="nav-item dropdown open" style="padding-left: 35px;">
+                 
+                     Dashboard
+                    </li>
+					
+                 
+                </ul>
+              
+            </div>
+          </div>
+
+        <!-- top navigation -->
+        
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="">
+            <div class="page-title">
+              <div class="title_left">
+                <h3>Counseling Information Form</h3>
+              </div>
+				 <!-- 	<div class="title_right">
+                <div class="col-md-5 col-sm-5  form-group row pull-right top_search">
+                  <div class="input-group">
+                    <h7>OMB Approval No.: 3245-0324</h7>
+					<h7>Expiration Date    : 10/31/2020</h7>
+					<h7>SBA Form 641     (10/24/2017)</h7>
+                  </div>
+                </div>
+              </div>-->
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="row">
+
+              <div class="col-md-12 col-sm-12 ">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Part II: Client Intake (to be completed by all Clients) </h2>
+                    
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+
+
+                    <!-- Smart Wizard -->
+                    <div id="wizard" class="form_wizard wizard_horizontal">
+                      <ul class="wizard_steps">
+                        <li>
+                          <a href="#step-1">
+                            <span class="step_no">I</span>
+                             <small>In Progress</small>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#step-2">
+                            <span class="step_no">II</span>
+                             <small>Pending</small>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#step-3">
+                            <span class="step_no">III</span>
+                            <small>Completed</small>
+                          </a>
+                        </li>
+                      </ul>
+                      <div id="step-1">
+					   
+							<div class="x_panel">
+						  <div class="x_title">
+							<h2>Background Information </h2>
+                   
+								<div class="clearfix"></div>
+							</div>
+					<div class="x_content">
+					
+					 <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+
+                      <div class="item form-group">
+                        <label class="col-form-label col-md-6 col-sm-6 " for="first-name"><b>Race: </b> <span class="required">*</span><br/>(mark one or more)<br/>
+                        </label>
+                       <div class="col-md-6 col-sm-6 ">
+                     <select class="select2_multiple form-control" multiple="multiple" required />
+                        <option value="American Indian or Alaska Native">American Indian or Alaska Native</option>
+						<option value="American Indian or Alaska Native">Asian</option>
+						<option value="American Indian or Alaska Native">Black or African American</option>
+						<option value="American Indian or Alaska Native">Native Hawaiian or Other Pacific Islander </option>
+						<option value="American Indian or Alaska Native">White</option>
+                          </select>
+					 </div>
+                      </div>
+                      <div class="item form-group">
+                         <label class="col-form-label col-md-6 col-sm-6 " for="first-name"><b>Ethnicity: </b> <span class="required">*</span></label>
+						 
+						 
+				
+						 <div class="col-md-3 col-sm-3 ">
+                        
+							<button type="button" class="btn btn-warning" style="color:#fff;background-color:#007dbc;border-color:#007dbc;"> Hispanic or Latino</button>
+							</div><div class="col-md-3 col-sm-3 ">
+							<button type="button" class="btn btn-secondary" style="color:#fff;background-color:#969696;border-color:#969696;">Not Hispanic or Latino</button>
+                        </div>
+						
+                      </div>
+					   <div class="item form-group">
+                         <label class="col-form-label col-md-6 col-sm-6 " for="first-name"><b>Gender:  </b><span class="required">*</span></label>
+						 
+						 
+				
+						 <div class="col-md-3 col-sm-3 ">
+                        
+							<button type="button" class="btn btn-warning" style="color:#fff;background-color:#007dbc;border-color:#007dbc;"> Male</button>
+							</div><div class="col-md-3 col-sm-3 ">
+							<button type="button" class="btn btn-secondary" style="color:#fff;background-color:#969696;border-color:#969696;">Female</button>
+                        </div>
+						
+                      </div>
+					   <div class="item form-group">
+                         <label class="col-form-label col-md-6 col-sm-6 " for="first-name"><b>Do you consider yourself as a person with disability? </b> <span class="required">*</span></label>
+						 
+						 
+				
+						 <div class="col-md-3 col-sm-3 ">
+                        
+							<button type="button" class="btn btn-warning" style="color:#fff;background-color:#007dbc;border-color:#007dbc;"> Yes</button>
+							</div><div class="col-md-3 col-sm-3 ">
+							<button type="button" class="btn btn-secondary" style="color:#fff;background-color:#969696;border-color:#969696;">No</button>
+                        </div>
+						
+                      </div>
+					
+					 <div class="item form-group">
+                        <label class="col-form-label col-md-6 col-sm-6 " for="first-name"><b>Referred By: <span class="required">*</span></b><br/>(Mark all that apply)  <br/>
+                        </label>
+                       <div class="col-md-6 col-sm-6 ">
+                     <select class="select2_multiple form-control" multiple="multiple" required />
+                        <option value="American Indian or Alaska Native">SBA District</option>
+						<option value="American Indian or Alaska Native">Lender</option>
+						<option value="American Indian or Alaska Native">Business Owner</option>
+						<option value="American Indian or Alaska Native">SBA Website </option>
+						<option value="American Indian or Alaska Native">SBDC</option>
+						<option value="American Indian or Alaska Native">Score</option>
+						<option value="American Indian or Alaska Native">WBC</option>
+						<option value="American Indian or Alaska Native">VBOC</option>
+						<option value="American Indian or Alaska Native">Other Client </option>
+						<option value="American Indian or Alaska Native">Educational Institution</option>
+						<option value="American Indian or Alaska Native">Local Economic Development Official</option>
+						<option value="American Indian or Alaska Native">Chamber of Commerce</option>
+						<option value="American Indian or Alaska Native">Magazine/Newspaper</option>
+						<option value="American Indian or Alaska Native">Word of Mouth</option>
+						<option value="American Indian or Alaska Native">Television/Radio </option>
+						<option value="American Indian or Alaska Native">Internet (please indicate website below)</option>
+						<option value="American Indian or Alaska Native">Other (specify below) </option>
+						<option value="American Indian or Alaska Native">USEAC</option>
+						<option value="American Indian or Alaska Native">Boots to Business</option>
+                      </select>
+					 </div>
+
+					 </div>
+					  <div class="item form-group">
+                        <label class="col-form-label col-md-6 col-sm-6 " for="first-name"> Please enter information for the above question  <span class="required">*</span><br/>
+                        </label>
+                       <div class="col-md-6 col-sm-6 ">
+                          <textarea id="message" required="required" class="form-control" name="message" data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="100" data-parsley-minlength-message="Website or Other Information.."
+                            data-parsley-validation-threshold="10"></textarea>
+					 </div>
+
+					 </div>
+					
+
+                    </form>
+					</div>
+					 </div>
+					 </div>
+                      <div id="step-2">
+					  <div class="x_panel">
+						  <div class="x_title">
+							<h2>Business Information </h2>
+                   
+								<div class="clearfix"></div>
+							</div>
+					<div class="x_content">
+					  
+					   <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+						<div class="item form-group">
+                         <label class="col-form-label col-md-6 col-sm-6 " for="first-name"><b>Are you Registered in SAM.gov? </b> <span class="required">*</span></label>
+						 
+						 
+				
+						 <div class="col-md-3 col-sm-3 ">
+                        
+							<button type="button" class="btn btn-warning" style="color:#fff;background-color:#007dbc;border-color:#007dbc;"> Yes</button>
+							</div><div class="col-md-3 col-sm-3 ">
+							<button type="button" class="btn btn-secondary" style="color:#fff;background-color:#969696;border-color:#969696;">No</button>
+                        </div>
+						
+                      </div>
+					  <div class="item form-group">
+                         <label class="col-form-label col-md-6 col-sm-6 " for="first-name"><b>Are you currently in business? </b> <span class="required">*</span></label>
+						 
+						 
+				
+						 <div class="col-md-3 col-sm-3 ">
+                        
+							<button type="button" class="btn btn-warning" style="color:#fff;background-color:#007dbc;border-color:#007dbc;"> Yes</button>
+							</div><div class="col-md-3 col-sm-3 ">
+							<button type="button" class="btn btn-secondary" style="color:#fff;background-color:#969696;border-color:#969696;">No</button>
+                        </div>
+						
+                      </div>
+					   <div class="item form-group">
+                         <label class="col-form-label col-md-6 col-sm-6 " for="first-name"><b>DUNS Number: </b> <span class="required">*</span></label>
+						 
+						 
+				
+						 <div class="col-md-6 col-sm-6 ">
+                        
+							 <input type="phone" id="phone" class="form-control" name="phone" data-parsley-trigger="change" />
+                        </div>
+						
+                      </div>
+					  <div class="item form-group">
+                         <label class="col-form-label col-md-6 col-sm-6 " for="first-name"><b>Are you currently exporting? </b> <span class="required">*</span></label>
+						 
+						 
+				
+						 <div class="col-md-3 col-sm-3 ">
+                        
+							<button type="button" class="btn btn-warning" style="color:#fff;background-color:#007dbc;border-color:#007dbc;"> Yes</button>
+							</div><div class="col-md-3 col-sm-3 ">
+							<button type="button" class="btn btn-secondary" style="color:#fff;background-color:#969696;border-color:#969696;">No</button>
+                        </div>
+						
+                      </div>
+                      <div class="item form-group">
+                        <label class="col-form-label col-md-6 col-sm-6 " for="first-name"><b>Indicate the markets to which your company currently exports: </b><span class="required">*</span> <br/>(mark all that apply) <br/>
+                        </label>
+                       <div class="col-md-6 col-sm-6 ">
+                     <select class="select2_multiple form-control" multiple="multiple" required />
+                          <label for="Experience1"> Asia </label>
+                            <option>  Afghanistan </option>
+                            <option>  Bahrain </option>
+                            <option>Bangladesh</option>
+                            <option>Belarus</option>
+                            <option>Bhutan</option>
+                            <option>Brunei</option>
+							<option>Burma</option>
+							<option>Cambodia</option>
+							<option>China</option>
+							<option>East Timor</option>
+							<option>Georgia</option>
+							<option>Hong Kong</option>
+							<option>India</option>
+							<option>Indonesia</option>
+							<option>Iran</option>
+							<option>Iraq</option>
+							<option>Israel</option>
+							<option>Japan</option>
+							<option>Jordan</option>
+							<option>Kazakhstan</option>
+							<option>Korea, North </option>
+							<option>Korea, South</option>
+							<option>Kuwait</option>
+							<option>Kyrgyzstan</option>
+							<option>Laos</option>
+							<option>Lebanon</option>
+							<option>Macau</option>
+							<option>Malaysia</option>
+							<option>Maldives</option>
+							<option>Micronesia</option>
+							<option>Mongolia</option>
+							<option>Nepal</option>
+							<option>Oman</option>
+							<option>Pakistan</option>
+							<option>Philippines </option>
+							<option>Qatar</option>
+							<option>Russia</option>
+							<option>Saudi Arabia </option>
+							<option>Singapore</option>
+							<option>Sri Lanka</option>
+							<option>Syria</option>
+							<option>Tajikistan</option>
+							<option>Taiwan</option>
+							<option>Thailand</option>
+							<option>Turkey</option>
+							<option>Turkmenistan</option>
+							<option>United Arab Emirates</option>
+							<option>Uzbekistan</option>
+							<option>Vietnam</option>
+							<option>Yemen</option>
+							
+				<label for="Experience1"> Africa </label>
+				
+							<option>Algeria</option>
+							<option>Angola</option>
+							<option>Benin</option>
+							<option>Botswana</option>
+							<option>Burkina Faso</option>
+							<option>Burundi</option>
+							<option>Cameroon</option>
+							<option>Cape Verde</option>
+							<option>Central African Republic </option>
+							<option>Chad</option>
+							<option>Comoros</option>
+							<option>Congo</option>
+							<option>Democratic Republic of Congo </option>
+							<option>Cote d'Ivoire </option>
+							<option>Djibouti</option>
+							<option>Egypt</option>
+							<option>Equatorial Guinea </option>
+							<option>Eritrea</option>
+							<option>Ethiopia</option>
+							<option>Gabon</option>
+							<option>Gambia</option>
+							<option>Ghana</option>
+							<option>Guinea</option>
+							<option>Guinea-Bissau </option>
+							<option>Kenya</option>
+							<option>Lesotho</option>
+							<option>Liberia</option>
+							<option>Libya</option>
+							<option>Madagascar</option>
+							<option>Malawi</option>
+							<option>Mali</option>
+							<option>Mauritania</option>
+							<option>Mauritius</option>
+							<option>Morocco</option>
+							<option>Mozambique</option>
+							<option>Namibia</option>
+							<option>Niger</option>
+							<option>Nigeria</option>
+							<option>Rwanda</option>
+							<option>Sao Tome and Principe </option>
+							<option>Senegal</option>
+							<option>Sierra Leone </option>
+							<option>Somalia </option>
+							<option>South Africa </option>
+							<option>Sudan</option>
+							<option>Swaziland</option>
+							<option>Tanzania</option>
+							<option>Togo</option>
+							<option>Tunisia</option>
+							<option>Uganda</option>
+							<option>Zambia</option>
+							<option>Zimbabwe</option>
+							
+							
+				<label for="Experience1"> Caribbean </label>
+				
+				
+							<option>Anguilla</option>
+							<option>Antigua & Barbuda</option>
+							<option>Aruba</option>
+							<option>Bahamas</option>
+							<option>Barbados</option>
+							<option>Virgin Islands (British) </option>
+							<option>Cayman Islands</option>
+							<option>Cuba</option>
+							<option>Dominica</option>
+							<option>Dominican Republic </option>
+							<option>Grenada</option>
+							<option>Haiti</option>
+							<option>Jamaica</option>
+							<option>Montserrat</option>
+							<option>Netherlands Antilles </option>
+							<option>St. Kitts and Nevis </option>
+							<option>St. Lucia </option>
+							<option>St. Vincent and Grenadines</option>
+							<option>Trinidad and Tobago  </option>
+							
+				<label for="Experience1"> Central America  </label>
+				
+							<option>Belize</option>
+							<option>Costa Rica</option>
+							<option>El Salvador</option>
+							<option>Guatemala</option>
+							<option>Honduras</option>
+							<option>Nicaragua</option>
+							<option>Panama</option>
+							
+				<label for="Experience1"> Europe  </label>
+				
+				
+							<option>Austria</option>
+							<option>Azerbaijan</option>
+							<option>Albania</option>
+							<option>Armenia</option>
+							<option>Belgium</option>
+							<option>Bosnia-Herzegovin</option>
+							<option>Bulgaria</option>
+							<option>Croatia</option>
+							<option>Cyprus</option>
+							<option>Czech Republic</option>
+							<option>Denmark</option>
+							<option>Estonia</option>
+							<option>Finland</option>
+							<option>France</option>
+							<option>Germany</option>
+							<option>Greece</option>
+							<option>Hungary</option>
+							<option>Iceland</option>
+							<option>Ireland</option>
+							<option>Italy</option>
+							<option>Latvia</option>
+							<option>Liechtenstein</option>
+							<option>Lithuania</option>
+							<option>Luxembourg</option>
+							<option>Macedonia</option>
+							<option>Malta</option>
+							<option>Moldova</option>
+							<option>Monaco</option>
+							<option>Montenegro</option>
+							<option>Netherlands</option>
+							<option>Norway</option>
+							<option>Poland</option>
+							<option>Portugal</option>
+							<option>Romania</option>
+							<option>Serbia</option>
+							<option>Slovak Republic </option>
+							<option>Slovenia</option>
+							<option>Spain</option>
+							<option>Sweden</option>
+							<option>Switzerland</option>
+							<option>Turkey</option>
+							<option>Ukraine</option>
+							<option>United Kingdom</option>
+							<option>Vatican City </option>
+							
+				<label for="Experience1"> North America   </label>
+							<option>Bermuda</option>
+							<option>Mexico</option>
+							<option>Canada</option>
+							
+				<label for="Experience1"> South America  </label>
+				
+							<option>Argentina</option>
+							<option>Bolivia</option>
+							<option>Brazil</option>
+							<option>Chile</option>
+							<option>Colombia</option>
+							<option>Ecuador</option>
+							<option>Guyana</option>
+							<option>Paraguay</option>
+							<option>Peru</option>
+							<option>Suriname</option>
+							<option>Uruguay</option>
+							<option>Venezuela</option>
+							
+				<label for="Experience1"> Oceania  </label>
+				
+							<option>Australia</option>
+							<option>New Zealand </option>
+							<option>Cook Islands</option>
+							<option>Fiji</option>
+							<option>Kiribati</option>
+							<option>Marshall Islands</option>
+							<option>Nauru</option>
+							<option>Palau</option>
+							<option>Papua New Guinea</option>
+							<option>Samoa</option>
+							<option>Solomon Islands </option>
+							<option>Tonga</option>
+							<option>Tuvalu</option>
+							<option>Vanuatu</option>
+							
+				<label for="Experience1"> Other  </label>
+				        <option> Subcontractor for Exporter </option>
+                          </select>
+					 </div>
+                      </div>
+                      <div class="item form-group">
+					<label class="col-form-label col-md-6 col-sm-6 " for="first-name"><b>Name of Business: </b> <span class="required">*</span></label>
+					<div class="col-md-6 col-sm-6 ">
+                      <input type="phone" id="phone" class="form-control" name="phone" data-parsley-trigger="change" />
+					  </div>
+					</div>
+					 
+						 <div class="item form-group">
+					<label class="col-form-label col-md-6 col-sm-6 " for="first-name"><b>Type of Business: </b><span class="required">*</span><br/> (Choose primary category) </label>
+					<div class="col-md-6 col-sm-6 ">
+                      <select id="heard" class="form-control" required>
+                            <option value="">Choose..</option>
+                            <option value="press">Mining</option>
+                            <option value="net">Utilities</option>
+                            <option value="mouth">Information</option>
+							<option value="mouth">Construction</option>
+							<option value="mouth">Retail Trade</option>
+							<option value="mouth">Manufacturing</option>
+							<option value="mouth">Finance & Insurance</option>
+							<option value="press">Wholesale Trade</option>
+                            <option value="net">Public Administration</option>
+                            <option value="mouth">Educational Services</option>
+							<option value="mouth">Real Estate & Rental & Leasing</option>
+							<option value="mouth">Health Care & Social Assistance</option>
+							<option value="mouth">Accommodation & Food Services</option>
+							<option value="mouth">Arts, Entertainment & Recreation</option>
+							<option value="mouth">Transportation & Warehousing</option>
+							<option value="mouth">Professional, Scientific & Technical Services</option>
+							<option value="mouth">Management of Companies & Enterprises</option>
+							<option value="mouth">Agriculture, Forestry, Fishing & Hunting</option>
+							<option value="mouth">Administrative & Support</option>
+							<option value="mouth">Waste Management & Remediation Services</option>
+							<option value="mouth">Other Services (except Public Administration)</option>
+                          </select>
+					  </div>
+					</div>
+					 <div class="item form-group">
+                         <label class="col-form-label col-md-6 col-sm-6 " for="first-name"><b>NAICS Code: </b> <span class="required">*</span></label>
+						 
+						 
+				
+						 <div class="col-md-6 col-sm-6 ">
+                        
+							 <input type="phone" id="phone" class="form-control" name="phone" data-parsley-trigger="change" />
+                        </div>
+						
+                      </div>
+					<div class="item form-group">
+                     <label class="col-form-label col-md-6 col-sm-6 " for="first-name"><b>Business Ownership: <span class="required">*</span> </b><br/>What percentage of your business is male or female owned?  </label>
+					 <div class="col-md-3 col-sm-3 ">
+                      Male owned percentage<input type="phone" id="phone" class="form-control" name="phone" data-parsley-trigger="change" placeholder="%" required />
+					  </div>
+					   <div class="col-md-3 col-sm-3 ">
+					 Female owned percentage<input type="phone" id="phone" class="form-control" name="phone" data-parsley-trigger="change" placeholder="%" required />
+					 </div>
+					
+					</div>
+					<div class="item form-group">
+                         <label class="col-form-label col-md-6 col-sm-6 " for="first-name"><b>Are you a veteran owned business? </b> <span class="required">*</span></label>
+						 
+						 
+				
+						 <div class="col-md-3 col-sm-3 ">
+                        
+							<button type="button" class="btn btn-warning" style="color:#fff;background-color:#007dbc;border-color:#007dbc;"> Yes</button>
+							</div><div class="col-md-3 col-sm-3 ">
+							<button type="button" class="btn btn-secondary" style="color:#fff;background-color:#969696;border-color:#969696;">No</button>
+                        </div>
+						
+                      </div>
+					 <div class="item form-group">
+					<label class="col-form-label col-md-6 col-sm-6 " for="first-name"><b>Veteran Status: </b> <span class="required">*</span></label>
+					<div class="col-md-6 col-sm-6 ">
+                      <select id="heard" class="form-control" required>
+                            <option value="">Choose..</option>
+                            <option value="press">No military, Reserve, or National Guard service</option>
+                            <option value="net">Veteran</option>
+                            <option value="mouth">Service-Disabled Veteran</option>
+							<option value="mouth">Member of the Reserve</option>
+							<option value="mouth">Active Duty</option>
+							<option value="mouth">Member of the National Guard</option>
+							<option value="mouth">Spouse of Military Member</option>
+                          </select>
+					  </div>
+					</div>
+					 <div class="item form-group">
+					<label class="col-form-label col-md-6 col-sm-6 " for="first-name"><b>Date Business Started?  </b><span class="required">*</span></label>
+					<div class="col-md-6 col-sm-6 ">
+                      <input type="phone" id="phone" class="form-control" name="phone" data-parsley-trigger="change" placeholder="MM/DD/YYYY"/>
+					  </div>
+					</div>
+					 <div class="item form-group">
+                         <label class="col-form-label col-md-6 col-sm-6 " for="first-name"><b>Are you a home based business? </b><span class="required">*</span></label>
+						 
+						 
+				
+						 <div class="col-md-3 col-sm-3 ">
+                        
+							<button type="button" class="btn btn-warning" style="color:#fff;background-color:#007dbc;border-color:#007dbc;"> Yes</button>
+							</div><div class="col-md-3 col-sm-3 ">
+							<button type="button" class="btn btn-secondary" style="color:#fff;background-color:#969696;border-color:#969696;">No</button>
+                        </div>
+						
+                      </div>
+					<div class="item form-group">
+                         <label class="col-form-label col-md-6 col-sm-6 " for="first-name"><b>Do you conduct business online? </b> <span class="required">*</span></label>
+						 
+						 
+				
+						 <div class="col-md-3 col-sm-3 ">
+                        
+							<button type="button" class="btn btn-warning" style="color:#fff;background-color:#007dbc;border-color:#007dbc;"> Yes</button>
+							</div><div class="col-md-3 col-sm-3 ">
+							<button type="button" class="btn btn-secondary" style="color:#fff;background-color:#969696;border-color:#969696;">No</button>
+                        </div>
+						
+                      </div>
+					  
+					  <div class="item form-group">
+                         <label class="col-form-label col-md-6 col-sm-6 " for="first-name"><b>Website where you conduct your business: </b> <span class="required">*</span></label>
+						 
+						 
+				
+						 <div class="col-md-6 col-sm-6 ">
+                        
+							 <input type="phone" id="phone" class="form-control" name="phone" data-parsley-trigger="change" placeholder="www.website.com"/>
+                        </div>
+						
+                      </div>
+					   <div class="item form-group">
+                         <label class="col-form-label col-md-6 col-sm-6 " for="first-name"><b>Are you a commercial business? </b><span class="required">*</span></label>
+						 
+						 
+				
+						 <div class="col-md-3 col-sm-3 ">
+                        
+							<button type="button" class="btn btn-warning" style="color:#fff;background-color:#007dbc;border-color:#007dbc;"> Yes</button>
+							</div><div class="col-md-3 col-sm-3 ">
+							<button type="button" class="btn btn-secondary" style="color:#fff;background-color:#969696;border-color:#969696;">No</button>
+                        </div>
+						
+                      </div>
+					 
+					   <div class="item form-group">
+                         <label class="col-form-label col-md-6 col-sm-6 " for="first-name"><b>Are you 8(a) certified? </b><span class="required">*</span></label>
+						 
+						 
+				
+						 <div class="col-md-3 col-sm-3 ">
+                        
+							<button type="button" class="btn btn-warning" style="color:#fff;background-color:#007dbc;border-color:#007dbc;"> Yes</button>
+							</div><div class="col-md-3 col-sm-3 ">
+							<button type="button" class="btn btn-secondary" style="color:#fff;background-color:#969696;border-color:#969696;">No</button>
+                        </div>
+						
+                      </div>
+					  
+					 
+                    </form>
+                      
+                     </div>
+					 </div>
+					 </div>
+                      <div id="step-3">
+					  <div class="x_panel">
+						  <div class="x_title">
+							<h2>Counseling and Assistance </h2>
+                   
+								<div class="clearfix"></div>
+							</div>
+					<div class="x_content">
+					  
+					   <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+                         <div class="item form-group">
+                     <label class="col-form-label col-md-6 col-sm-6 " for="first-name"><b>Total Number of Employees:  <span class="required">*</span></b></label>
+					 <div class="col-md-6 col-sm-6 ">
+                      Full Time and Part Time<input type="phone" id="phone" class="form-control" name="phone" data-parsley-trigger="change" placeholder="Total Number of Full Time and Part Time Employees" required />
+					  </div>
+					 
+					
+					</div>
+					 <div class="item form-group">
+                     <label class="col-form-label col-md-6 col-sm-6 " for="first-name">Of total employees, how many are engaged in the exporting aspect of your business:  </label>
+					  <div class="col-md-3 col-sm-3 ">
+                      Full Time <input type="phone" id="phone" class="form-control" name="phone" data-parsley-trigger="change" required />
+					  </div>
+					   <div class="col-md-3 col-sm-3 ">
+					 Part Time	 <input type="phone" id="phone" class="form-control" name="phone" data-parsley-trigger="change" required />
+					 </div> 
+					
+					</div>
+					<div class="item form-group">
+                     <label class="col-form-label col-md-6 col-sm-6 " for="first-name"><b>For your most recent full business year, what were your:  <span class="required">*</span></b></label>
+					 <div class="col-md-4 col-sm-4 ">
+                      Gross Revenues/Sales  <input type="phone" id="phone" class="form-control" name="phone" data-parsley-trigger="change" placeholder="$" required />
+					  </div>
+					   <div class="col-md-1 col-sm-1 ">
+					 +Profits	 <input type="phone" id="phone" class="form-control" name="phone" data-parsley-trigger="change" placeholder="$" required />
+					 </div>
+					 <div class="col-md-1 col-sm-1 ">
+					 -Losses <input type="phone" id="phone" class="form-control" name="phone" data-parsley-trigger="change" placeholder="$" required />
+					 </div>
+					
+					</div>
+					<div class="item form-group">
+                     <label class="col-form-label col-md-6 col-sm-6 " for="first-name"><b>Amount of your Gross Revenues/Sales related to exporting  <span class="required">*</span></b></label>
+					 <div class="col-md-6 col-sm-6 ">
+                      <input type="phone" id="phone" class="form-control" name="phone" data-parsley-trigger="change" placeholder="$" required />
+					 </div>
+					
+					</div>
+					 <div class="item form-group">
+                        <label class="col-form-label col-md-6 col-sm-6 " for="first-name"><b>What is the legal entity of your business? </b> <span class="required">*</span><br/>
+                        </label>
+                       <div class="col-md-6 col-sm-6 ">
+                     <select class="select2_multiple form-control" multiple="multiple" required />
+                        <option value="American Indian or Alaska Native">Sole Proprietorship</option>
+						<option value="American Indian or Alaska Native">S-Corporation</option>
+						<option value="American Indian or Alaska Native">Corporation</option>
+						<option value="American Indian or Alaska Native">LLC </option>
+						<option value="American Indian or Alaska Native">Partnership</option>
+						<option value="American Indian or Alaska Native">Other (specify)</option>
+                          
+						  </select>
+					 </div>
+					 </div>		
+					 <div class="item form-group">
+                        <label class="col-form-label col-md-6 col-sm-6 " for="first-name"> Please enter information for the above question:  <br/>
+                        </label>
+                       <div class="col-md-6 col-sm-6 ">
+                          <textarea id="message" required="required" class="form-control" name="message" data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="100" data-parsley-minlength-message="Website or Other Information.."
+                            data-parsley-validation-threshold="10"></textarea>
+					 </div>
+
+					 </div>
+						 <div class="item form-group">
+					<label class="col-form-label col-md-6 col-sm-6 " for="first-name"><b>What is the nature of counseling you are seeking? <span class="required">*</span> </b><br/>(Choose primary category)  </label>
+					<div class="col-md-6 col-sm-6 ">
+                      <select id="heard" class="form-control" required>
+                            <option value="">Choose..</option>
+                            <option value="press">Start-up Assistance (How do I start a small business?)</option>
+                            <option value="net">Business Plan</option>
+                            <option value="mouth">Financing/Capital (such as applying for a loan, building equity capital)</option>
+							<option value="mouth">Managing a Business</option>
+							<option value="mouth">Retail Trade</option>
+							<option value="mouth">Human Resources/ Managing Employees</option>
+							<option value="mouth">Customer Relations</option>
+							<option value="press">Business Accounting/ Budget</option>
+                            <option value="net">Cash Flow Management</option>
+                            <option value="mouth">Tax Planning</option>
+							<option value="mouth">Marketing/Sales (promotion, market research, pricing, etc.)</option>
+							<option value="mouth">Government Contracting (including certifications)</option>
+							<option value="mouth">Franchising</option>
+							<option value="mouth">Buy/Sell Business</option>
+							<option value="mouth">Technology/Computers</option>
+							<option value="mouth">eCommerce (using the Internet to do business)</option>
+							<option value="mouth">Legal Issues (such as, Should I incorporate?)</option>
+							<option value="mouth">International Trade</option>
+							<option value="mouth">Describe specific assistance requested in the space provided.</option>
+                          </select>
+					  </div>
+					</div>
+					 <div class="item form-group">
+                        <label class="col-form-label col-md-6 col-sm-6 " for="first-name"> Please enter information for the above question:  <br/>
+                        </label>
+                       <div class="col-md-6 col-sm-6 ">
+                          <textarea id="message" required="required" class="form-control" name="message" data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="100" data-parsley-minlength-message="Website or Other Information.."
+                            data-parsley-validation-threshold="10"></textarea>
+					 </div>
+
+					 </div> 
+                       </div>
+					 </div>
+					 </div>
+
+                    </div>
+                    <!-- End SmartWizard Content -->
+
+
+
+
+ </div>
+						</div>
+						
+                      
+                      </div>
+                      
+
+                    </div>
+                    <!-- End SmartWizard Content -->
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+                    
+        <!-- /page content -->
+
+        <!-- footer content -->
+      <nav>
+		<a tabindex="-1" href="https://www.sba.gov" class="logo">
+			<img alt="Small Business Administration" src="logo.png">
+		</a>
+		<div class="menus">
+			<ul class="deskop-mini-nav" aria-label="mini-navigation">
+					
+				<li>
+					<a class=" btn-social btn-twitter" tabindex="0" id="deskop-mini-nav-2"><span class="fa fa-twitter"></span> </a>
+				</li>
+				<li>
+					<a class=" btn-social btn-facebook" tabindex="0" id="deskop-mini-nav-2"><span class="fa fa-facebook"></span> </a>
+				</li>
+				<li>
+					<a class=" btn-social btn-youtube" tabindex="0" id="deskop-mini-nav-2"><span class="fa fa-youtube"></span> </a>
+				</li>
+			</ul>
+			<ul class="main-menu">
+				<li>
+					<a id="sub-menu-0-title" href="https://www.sba.gov/business-guide">help@edmis.sba.gov</a>
+				</li>
+				<li>
+					<a id="sub-menu-5-title" href="https://www.sba.gov/about-sba">Contact SBA</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+        <!-- /footer content -->
+      </div>
+    </div>
+	
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+   <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- jQuery Smart Wizard -->
+    <script src="../vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+
+	
+  </body>
+</html>

@@ -1,0 +1,720 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Small Business Administration</title>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css"  >
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css" >
+    <!-- NProgress -->
+    <link rel="stylesheet" type="text/css"  href="node_modules/nprogress/nprogress.css">
+	
+    <!-- Custom Theme Style -->
+    <!-- <link href="../build/css/custom.min.css" rel="stylesheet"> -->
+	<link rel="stylesheet" type="text/css"  href="temp/Version/build/css/custom.css">
+   <style>
+
+	nav {
+		background-color: #FFF;
+	}
+	
+	.IndustryBus {
+					/*border: 1px ##ccc solid;*/
+					padding: .75em 10px;
+				}
+				
+				.Experience1 {
+					border: 1px ##ccc solid;
+					padding: .7em 10px;
+				}
+				.Experience2 {
+					border: 1px ##ccc solid;
+					padding: .75em 10px;
+				}
+
+	nav .deskop-mini-nav a {
+		color: #002e6d;
+		font-size: 13px;
+	}
+
+	nav .main-menu a {
+		color: #00bfff;
+		font-weight: bold;
+	}
+	
+	nav a {
+		text-decoration: none;
+	}
+	
+	nav .menus ul {
+		padding: 0;
+		margin-bottom: 12px;
+	}
+		
+	@media screen and (min-width: 1024px) {
+			
+		nav {
+			height: 116px;
+			width: 100%;
+			/*width: calc(100% - 60px);*/
+			/*margin: 0 auto;*/
+			padding-left: 30px;
+			padding-right: 30px;
+			vertical-align: bottom;
+		}
+		
+		nav .logo {
+			float: left;
+			display: inline;
+			height: 56px;
+			margin: 30px 0px;
+
+		}
+
+		nav .logo img {
+			max-height: 100%;
+			max-width: 100%;
+		}
+		
+		nav .menus {
+			float: right;
+			display: inline;
+			text-align: right;
+			margin-top: 30px;
+		}
+		
+		.deskop-mini-nav li, .main-menu li {
+			display: inline;
+			margin-left: 12px;
+		}
+		.mobile-view{
+				display:none;
+
+			}
+			.desktop-view{
+				display:block;
+			}
+	}
+
+
+
+	
+	@media screen and (max-width: 1023px) {
+		
+		nav {
+			max-width: 768px;
+			margin: 1em auto;
+			text-align: center;
+		}
+		
+		nav .deskop-mini-nav {
+			display: none;
+		}
+		
+		nav ul li, nav ul li a {
+			display: block;
+		}
+		
+		nav ul li a {
+			padding: 1em;
+			border: 1px solid #efefef;
+		}
+		.mobile-view{
+			display:block;
+		}
+		.desktop-view{
+			display:none;
+		}
+		
+	}
+</style>
+    <script>
+		const TrainingTopics = [
+			"Business Start-up/Preplanning",
+			"Business Plan",
+			"Business Financing/Capital Sources",
+			"Managing a Business",
+			"Human Resources/Managing Employees",
+			"Customer Relations",
+			"Business Accounting/Budget",
+			"Cash Flow Management",
+			"Tax Planning",
+			"Marketing/Sales",
+			"Government Contracting",
+			"Franchising",
+			"Buy/Sell Business",
+			"Technology/Computers",
+			"eCommerce",
+			"Legal Issues",
+			"International Trade",
+			"Other (Specify)"
+		];
+		const ResourcePartners = [
+			"SCORE",
+			"SBDC",
+			"Women's Business Center",
+			"VBOC",
+			"Educational Institution",
+			"Chamber Of Commerce",
+			"Trade Or Professional Assoc.",
+			"For-Profit Organization",
+			"Online Training Resource",
+			"SBA District Office",
+			"Native American Center",
+			"SBA (specify office)",
+			"Other Govt. Agency (specify)",
+			"Other (specify)"
+		];
+		const ProgramFormats = [
+			"Seminar (short-term training on business-related subjects that is conducted as a single, stand alone program)",
+			"Course (more formal structured training on business-related subjects that may be conducted over a number of sessions)", 
+			"Online Course (a formal structured training delivered via the Internet)", 
+			"Teleconference (any training delivered via electronic communications, except Online Course)" 
+		];
+	</script>
+  </head>
+  <body class="">
+    <div class ="container main_container x_panel" id='888_form'>
+
+		<section class='' id='step-1' name = 'Location-s'>
+				
+				<h2  class="StepTitle col-12">Location</h2> 
+			
+					<h3>Office</h3>
+					<form class='col-xs-12'>
+						<div class='form-group col-md-4'>
+							<label class='col' for='officeName' style='padding:0;'>Office Name</label>
+							<input class='col' id = 'officeName' type='text' placeholder='office name'>
+						</div>
+						<div class = 'form-group col-md-4' name='CityState'>
+							<label for='officeCity' class='col-sm' style='padding:0;'>City</label>
+							<input id='officeCity' class='col-sm' type="text" placeholder="city">
+						</div>
+						<div class='form-group col-md-4'>
+							<label for='officeState' class='col-sm' style='padding:0;'>State</label>
+							<input id='officeState' class='col-sm' type="text" placeholder='state'>
+						</div>
+						<!--ORGANIZATION TYPE-->
+						<div class='form-group col-md-4'>
+							<h3>Organization Type</h3>
+							<select class="selectpicker col-md" data-live-search='true'>
+							  <option>SBDC</option>
+							  <option>WBC</option>
+							  <option>SBA District Office</option>
+							  <option>SCORE</option>
+							  <option>Other</option>
+							</select>
+							<input disabled class='col-sm' type='text' placeholder='Chapter No. if SCORE. specify if other'>
+					
+						</div>
+					</form>
+					<!--
+					<div class='row'>
+						<div class='col'>	
+							<label for='officeName' class='col-sm-4' style='padding:0;'>Office Name</label>
+							<input id-'officeName' class ='col-sm-6' type="text" placeholder="office name">
+						</div>
+						<div class = 'col-12' name='CityState'>
+							<label for='officeCity' class='col' style='padding:0;'>City</label>
+							<input id='officeCity' class='col' type="text" placeholder="city">
+							<label for='officeState' class='col' style='padding:0;'>State</label>
+							<input id='officeState' class='col' type="text" placeholder='state'>
+						</div>
+					</div>
+					<div class='col-sm'>	
+						
+						<label for='officeName' class='col-sm-2' style='padding:0;'>Office Name</label>
+						<input id-'officeName' class ='col-sm-10' type="text" placeholder="office name">
+					</div>
+					<div class = 'col-sm' name='CityState'>
+						<label for='officeCity' class='col-sm' style='padding:0;'>City</label>
+						<input id='officeCity' class='col-sm' type="text" placeholder="city">
+						<label for='officeState' class='col-sm' style='padding:0;'>State</label>
+						<input id='officeState' class='col-sm' type="text" placeholder='state'>
+					</div>
+					
+				<div class='col-sm'>
+					<h3>Organization Type</h3>
+					<select class="selectpicker col-md" data-live-search='true'>
+					  <option>SBDC</option>
+					  <option>WBC</option>
+					  <option>SBA District Office</option>
+					  <option>SCORE</option>
+					  <option>Other</option>
+					</select>
+					<input disabled class='col-sm' type='text' placeholder='Chapter No. if SCORE. specify if other'>
+					
+				</div>
+			-->
+		</section>
+		<section id='step-2' name ='TrainingInfo-s'>
+			<h2  class="StepTitle col-xs-12">Training Information</h2>
+			<form class='col-xs-12'>
+				<div class='form-group col-md-4'>
+					<label class='col' for='trainingTitle' style='padding:0;'>Title</label>
+					<input class='col' id = 'trainingTitle' type='text' placeholder='title'>
+				</div>
+				<div class='form-group col-md-4'>
+					<label class='col' for='trainingSessions' style='padding:0;'>Number of Sessions</label>
+					<input class='col' id = 'trainingSessions' type='text' placeholder='no. of sessions'>
+				</div>
+				<div class='form-group col-md-4'>
+					<label class='col' for='trainingHours' style='padding:0;'>Hours of Training</label>
+					<input class='col' id = 'trainingHours' type='text' placeholder='hours'>
+				</div>
+					
+				<!--Location of Training-->
+				<div class='form-group col-md-12'>
+					<strong> Location of Training</strong>
+				</div>
+				<div class='form-group col-md-4'>
+					<label class='col' for='trainingCity' style='padding:0;'>City</label>
+					<input class='col' id = 'trainingCity' type='text' placeholder='training city'>
+				</div>
+				<div class='form-group col-md-4'>
+					<label class='col' for='trainingState' style='padding:0;'>State</label>
+					<input class='col' id = 'trainingState' type='text' placeholder='training state'>
+				</div>
+				<div class='form-group col-md-4'>
+					<label class='col' for='trainingZip' style='padding:0;'>Zip</label>
+					<input class='col' id = 'trainingZip' type='text' placeholder='training zip'>
+				</div>
+			</form>
+		</section>
+		<section id='step-3' name='BusDemographics-s'>
+			<h2  class="StepTitle col-sm-12">Business Demographics</h2>
+			<form class='col-xs-12'>
+				<div class='form-group col-md-4'>
+					<label class='col' for='busDemTotalNoTrained' style='padding:0;'>Total Number Trained</label>
+					<input class='col' id='busDemTotalNoTrained' type="Number" value=0>
+				</div>
+				<div class='form-group col-md-4'>
+					<label class='col' for='busDemInBusiness' style='padding:0;'>Currently in Business</label>
+					<input class='col' id='busDemInBusiness' type="Number" value=0>
+				</div>
+				<div class='form-group col-md-4'>
+					<label class='col' for='busDemNotInBusiness' style='padding:0;'>Not Yet in Business</label>
+					<input class='col' id='busDemNotInBusiness' type="Number" value=0>
+				</div>
+				<div class='form-group col-md-4'>
+					<label class='col' for='busDemDisabilities' style='padding:0;'>People with Disabilities</label>
+					<input class='col' id='busDemDisabilities' type="Number" value=0>
+				</div>
+				<div class='form-group col-md-4'>
+					<label class='col' for='busDemWomen' style='padding:0;'>Women</label>
+					<input class='col' id='busDemWomen' type="Number" value=0>
+				</div>
+				<div class='form-group col-md-4'>
+					<label class='col' for='busDemVeterans' style='padding:0;'>Total Veterans
+					<input class='col' id='busDemVeterans' type="Number" value=0>
+				</div>
+				<div class='form-group col-md-4'>
+					<label class='col' for='busDemServiceDisVets' style='padding:0;'></label>Service-Disabled Veterans
+					<input class='col' id='busDemServiceDisVets' type="Number" value=0>
+				</div>
+				<div class='form-group col-md-4'>
+					<label class='col' for='busDemReserveNationalGuard' style='padding:0;'>Members of Reserve or National Guard</label>
+					<input class='col' id='busDemReserveNationalGuard' type="Number" value=0>
+				</div>
+			</form>
+		</section>
+		<section id='step-4' name='MinorityDemographics-s'>
+			<h2  class="StepTitle col-sm-12">Minority Demographics</h2>
+			<form class='col-xs-12'>
+				<div class='form-group col-md-12'>
+					<label class='col' for='minorityTrained' style='padding:0;'>Total Number of Minorities Trained</label>
+					<input class='col' id='minorityTrained' type="Number" value=0>
+				</div>
+				<div class='form-group col-md-12'>
+					<strong>Race</strong>
+				</div>
+				<div class='form-group col-md-4'>
+					<label class='col' for='minorityAsian' style='padding:0;'>Asians</label>
+					<input class='col' id='minorityAsian' type="Number" value=0>
+				</div>
+				<div class='form-group col-md-4'>
+					<label class='col' for='minorityBlack' style='padding:0;'>Blacks or African Americans</label>
+					<input class='col' id='minorityBlack' type="Number" value=0>
+				</div>
+
+				<div class='form-group col-md-4'>
+					<label class='col' for='minorityNativeAmerican' style='padding:0;'>Native Americans or Alaskan Natives</label>
+					<input class='col' id='minorityNativeAmerican' type="Number" value=0>
+				</div>
+				<div class='form-group col-md-4'>
+					<label class='col' for='minorityHawaiian' style='padding:0;'>Native Hawaiians or Other Pacific Islanders</label>
+					<input class='col' id='minorityHawaiian' type="Number" value=0>
+				</div>
+				<div class='form-group col-md-4'>
+					<label class='col' for='minorityWhite' style='padding:0;'>White</label>
+					<input class='col' id='minorityWhite' type="Number" value=0>
+				</div>
+				<div class='form-group col-md-12'>
+					<strong>Ethnicity</strong>
+				</div>
+				<div class='form-group col-md-6'>
+					<label class='col' for='minorityHispanic' style='padding:0;'>Hispanic Origin</label>
+					<input class='col' id='minorityHispanic' type="Number" value=0>
+				</div>
+				<div class='form-group col-md-6'>
+					<label class='col' for='minorityNotHispanic' style='padding:0;'>Not of Hispanic Origin</label>
+					<input class='col' id='minorityNotHispanic' type="Number" value=0>
+				</div>
+			</form>
+		
+		</section> <!--MinorityDemographics-->
+		<section id='step-5' name='Topics-s'>
+			<h2  class="StepTitle col-sm-12">Topics</h2>
+			<form class='col-xs-12'>
+				
+				<div class='form-group'>
+					<strong class='col'>Training Topics (check primary topic)</strong>
+					<select class='col'>
+						<option>Business Accounting/Budget</option>
+						<option>Business Financing/Capital Sources</option>
+						<option>Business Plan</option>
+						<option>Business Start-up/Preplanning</option>	
+						<option>Buy/Sell Business</option>
+						<option>Cash Flow Management</option>
+						<option>Customer Relations</option>
+						<option>eCommerce</option>
+						<option>Franchising</option>
+						<option>Human Resources/Managing Employees</option>
+						<option>International Trade</option>
+						<option>Managing a Business</option>
+						<option>Marketing/Sales</option>
+						<option>Government Contracting</option>
+						<option>Legal Issues</option>
+						<option>Other (Specify)</option>
+						<option>Tax Planning</option>
+						<option>Technology/Computers</option>
+					</select>
+					<input disabled class='col' type="text" placeholder="specify"/>
+				</div>
+				<div class='form-group'>
+					<strong class='col'>Resource Partners Participating (check all that apply)</strong>
+
+					<select class="col select2_multiple form-control" multiple style="width:100%; height:250px; overflow:scroll;">
+						<option>SCORE</option>
+						<option>SBDC</option>
+						<option>Women's Business Center</option>
+						<option>VBOC</option>
+						<option>Educational Institution</option>
+						<option>Chamber Of Commerce</option>
+						<option>Trade Or Professional Assoc.</option>
+						<option>For-Profit Organization</option>
+						<option>Onoptionne Training Resource</option>
+						<option>SBA District Office</option>
+						<option>Native American Center</option>
+						<option>SBA (specify office)</option>
+						<option>Other Govt. Agency (specify)</option>
+						<option>Other (specify)</option>
+					</select>
+					<input disabled class='col' type="text" placeholder="specify"/>
+				</div>
+				<div class='form-group'>
+					<strong class='col' >Program Format (check only one)</strong>
+					<select class="col form-control">
+						<option>Seminar (short-term training on business-related subjects that is conducted as a single, stand alone program)</option>
+						<option>Course (more formal structured training on business-related subjects that may be conducted over a number of sessions)</option>
+						<option>Online Course (a formal structured training delivered via the Internet)</option>
+						<option>Teleconference (any training delivered via electronic communications, except Online Course)</option>
+					</select>
+				
+				</div>
+			</form>
+			<div>
+			<!--
+				<div>
+					<strong>Training Topics (check primary topic)</strong>
+				</div>
+				<input type='text' placeholder='search'/>
+				
+				<ul>
+					<li> <input type='checkbox' value="Business Start-up/Preplanning">Business Start-up/Preplanning </li>
+					<li> <input type='checkbox' value="Business Plan">Business Plan </li>
+					<li> <input type='checkbox' value="Business Financing/Capital Sources">Business Financing/Capital Sources</li>
+					<li> <input type='checkbox' value="Managing a Business">Managing a Business</li>
+					<li> <input type='checkbox' value="Human Resources/Managing Employees">Human Resources/Managing Employees</li>
+					<li> <input type='checkbox' value="Customer Relations">Customer Relations </li>
+					<li> <input type='checkbox' value="Business Accounting/Budget">Business Accounting/Budget </li>
+					<li> <input type='checkbox' value="Cash Flow Management">Cash Flow Management </li>
+					<li> <input type='checkbox' value="Tax Planning">Tax Planning </li>
+					<li> <input type='checkbox' value="Marketing/Sales">Marketing/Sales </li>
+					<li> <input type='checkbox' value="Government Contracting">Government Contracting </li>
+					<li> <input type='checkbox' value="Franchising">Franchising </li>
+					<li> <input type='checkbox' value="Buy/Sell Business">Buy/Sell Business</li>
+					<li> <input type='checkbox' value="Technology/Computers">Technology/Computers </li>
+					<li> <input type='checkbox' value="eCommerce">eCommerce </li>
+					<li> <input type='checkbox' value="Legal Issues">Legal Issues </li>
+					<li> <input type='checkbox' value="International Trade">International Trade </li>
+					<li> <input type='checkbox' value="Other (Specify)">Other (Specify)</li>
+				</ul>
+				
+				<input type="text" placeholder="specify"/>
+			</div>
+			<div>
+				<h4>Resource Partners Participating (check all that apply)</h4>
+
+					<select class="select2_multiple form-control" multiple style="width:100%; height:250px; overflow:scroll;">
+						<option>SCORE</option>
+						<option>SBDC</option>
+						<option>Women's Business Center</option>
+						<option>VBOC</option>
+						<option>Educational Institution</option>
+						<option>Chamber Of Commerce</option>
+						<option>Trade Or Professional Assoc.</option>
+						<option>For-Profit Organization</option>
+						<option>Onoptionne Training Resource</option>
+						<option>SBA District Office</option>
+						<option>Native American Center</option>
+						<option>SBA (specify office)</option>
+						<option>Other Govt. Agency (specify)</option>
+						<option>Other (specify)</option>
+					</select>
+-->
+					<!--
+					<ul>
+					<li> <input type='checkbox' value="SCORE">SCORE</li>
+					<li> <input type='checkbox' value="SBDC">SBDC</li>
+					<li> <input type='checkbox' value="Women's Business Center">Women's Business Center</li>
+					<li> <input type='checkbox' value="VBOC">VBOC</li>
+					<li> <input type='checkbox' value="Educational Institution">Educational Institution</li>
+					<li> <input type='checkbox' value="Chamber Of Commerce">Chamber Of Commerce</li>
+					<li> <input type='checkbox' value="Trade Or Professional Assoc.">Trade Or Professional Assoc.</li>
+					<li> <input type='checkbox' value="For-Profit Organization">For-Profit Organization</li>
+					<li> <input type='checkbox' value="Online Training Resource">Online Training Resource</li>
+					<li> <input type='checkbox' value="SBA District Office">SBA District Office</li>
+					<li> <input type='checkbox' value="Native American Center">Native American Center</li>
+					<li> <input type='checkbox' value="SBA (specify office)">SBA (specify office)</li>
+					<li> <input type='checkbox' value="Other Govt. Agency (specify)">Other Govt. Agency (specify)</li>
+					<li> <input type='checkbox' value="Other (specify)">Other (specify)</li>
+
+					</ul>
+					-->
+				<!--	<input type="text" placeholder="specify">
+
+
+			</div>
+
+			<div>
+				<h4>Program Format (check only one)</h4>
+				<select class="form-control">
+					<option>Seminar (short-term training on business-related subjects that is conducted as a single, stand alone program)</option>
+					<option>Course (more formal structured training on business-related subjects that may be conducted over a number of sessions)</option>
+					<option>Online Course (a formal structured training delivered via the Internet)</option>
+					<option>Teleconference (any training delivered via electronic communications, except Online Course)</option>
+			
+				</select>
+				
+				
+				<ul>
+					<li> <input type='checkbox' value="Seminar">Seminar (short-term training on business-related subjects that is conducted as a single, stand alone program)</li>
+					<li> <input type='checkbox' value="Course">Course (more formal structured training on business-related subjects that may be conducted over a number of sessions)</li>
+					<li> <input type='checkbox' value="Online Course">Online Course (a formal structured training delivered via the Internet)</li>
+					<li> <input type='checkbox' value="Teleconference">Teleconference (any training delivered via electronic communications, except Online Course)</li>
+			
+				</ul>
+				-->
+			</div>
+		</section> <!--Topics End-->
+		<section id='step-6' name='AttendeeFee-s'>
+			<h2  class="StepTitle col-sm-12">Attendee Fee</h2>
+			<form class='col-sm-12'>
+				<div class='form-group col-sm-12'>
+					<div class='mobile-view col-xs-12'>
+						<div class="card col-sm-12">
+						  <div class="card-header">
+							Type:Full Fee
+						  </div>
+						  <ul class="list-group list-group-flush">
+							<li class="list-group-item"><label class='col-sm-12'>Number of Attendees</label><input class='col-sm-12' type="Number" placeholder='0' value-'0'></li>
+							<li class="list-group-item"><label class='col-sm-12'>Fee</label><input class='col-sm-12' type="Number" placeholder='0' value-'0'></li>
+							<li class="list-group-item"><label class='col-sm-12'>Total</label><input class='col-sm-12' type="Number" placeholder='0' value-'0'></li>
+						  </ul>
+						</div>
+						<div class="card col-sm-12">
+						  <div class="card-header">
+							Type:Discounted Fee
+						  </div>
+						  <ul class="list-group list-group-flush">
+							<li class="list-group-item"><label class='col-sm-12'>Number of Attendees</label><input class='col-sm-12' type="Number" placeholder='0' value-'0'></li>
+							<li class="list-group-item"><label class='col-sm-12'>Fee</label><input class='col-sm-12' type="Number" placeholder='0' value-'0'></li>
+							<li class="list-group-item"><label class='col-sm-12'>Total</label><input class='col-sm-12' type="Number" placeholder='0' value-'0'></li>
+						  </ul>
+						</div>
+						<div class="card col-sm-12">
+						  <div class="card-header">
+							Type:No Fee
+						  </div>
+						  <ul class="list-group list-group-flush">
+							<li class="list-group-item"><label class='col-sm-12'>Number of Attendees</label><input class='col-sm-12' type="Number" placeholder='0' value-'0'></li>
+							<li class="list-group-item"><label class='col-sm-12'>Fee</label><input class='col-sm-12' disabled type="Number" placeholder='0' value-'0'></li>
+							<li class="list-group-item"><label class='col-sm-12'>Total</label><input class='col-sm-12' disabled type="Number" placeholder='0' value-'0'></li>
+						  </ul>
+						</div>
+						<div class="card col-sm-12">
+						  <div class="card-header">
+							Type:No Show Income
+						  </div>
+						  <ul class="list-group list-group-flush">
+							<li class="list-group-item"><label class='col-sm-12'>Number of Attendees</label><input class='col-sm-12' type="Number" placeholder='0' value-'0'></li>
+							<li class="list-group-item"><label class='col-sm-12'>Fee</label><input class='col-sm-12' type="Number" placeholder='0' value-'0'></li>
+							<li class="list-group-item"><label class='col-sm-12'>Total</label><input class='col-sm-12' type="Number" placeholder='0' value-'0'></li>
+						  </ul>
+						</div>
+						<div class="card col-sm-12">
+						  <div class="card-header">
+							Type:Other Income
+						  </div>
+						  <ul class="list-group list-group-flush">
+							<li class="list-group-item"><label class='col-sm-12'>Total</label><input class='col-sm-12' type="Number" placeholder='0' value-'0'></li>
+						  </ul>
+						</div>
+					</div>
+					<table class='desktop-view table'>
+						<thead>
+							<tr>
+								<td scope='col'>Fee Type</td>
+								<td scope='col'>No. of Attendees</td>
+								<td scope='col'>Fee</td>
+								<td scope='col'>Total</td>
+							</tr>
+						<thead>
+						<tbody >
+							<tr>
+								<td>Full Fee</td>
+								<td scope='col'>
+									<input  type='Number' placeholder='no. of attendees'> 
+								</td>
+								<td scope='col'><input type='Number' placeholder='fee'></td>
+								<td scope='col'><input type='Number' placeholder='0'></td>
+							<tr>
+							<tr>
+								<td>Discounted Fee</td>
+								<td scope='col'>
+									<input  type='Number' placeholder='no. of attendees'> 
+								</td>
+								<td scope='col'><input type='Number' placeholder='fee'></td>
+								<td scope='col'><input type='Number' placeholder='0'></td>
+							<tr>
+							<tr>
+								<td>No Fee</td>
+								<td scope='col'>
+									<input  type='Number' placeholder='no. of attendees'> 
+								</td>
+								<td scope='col'><input disabled type='Number' placeholder='fee' value='0'></td>
+								<td scope='col'><input type='Number' placeholder='0'></td>
+							<tr>
+							<tr>
+								<td>No Show Income</td>
+								<td scope='col'>
+									<input  type='Number'  placeholder='no. of attendees'> 
+								</td>
+								<td scope='col'><input  type='Number' placeholder='fee' value='0'></td>
+								<td scope='col'><input type='Number' placeholder='0'></td>
+							<tr>
+							<tr>
+								<td>Other Income</td>
+								<td scope='col'>
+								</td>
+								<td scope='col'>
+								</td>
+								<td scope='col'><input type='Number' placeholder='0'></td>
+							<tr>
+						</tbody>
+					</table>
+					
+				</div>
+			</form>
+			<!--<div class='col-sm-3'><strong>Full Fee</strong></div>
+					<div class='col-sm-3'>
+						<input class ='col'type='Number' placeholder='no. of attendees'> 
+						<strong class='col'>xX</strong>
+					</div>
+					<div class='col-sm-3'>$<input type='Number' placeholder='fee per attendee'> =</div>
+					<div class='col-sm-3'>$<input type='Number'></div>
+			<table class='table col-xs-12'>
+				<tbody>
+					<tr>
+					<td><strong>Full Fee</strong></td>
+					<td><input type='Number' placeholder='no. of attendees'> x</td>
+					<td>$<input type='Number' placeholder='fee per attendee'> =</td>
+					<td>$<input type='Number'></td>
+					</tr>
+				</tbody>
+				</tr>
+				
+				<tr>
+					<td>Discounted Fee</td><td><input type='Number' placeholder='no. of attendees'> x</td><td>$<input type='Number' placeholder='fee per attendee'> =</td><td>$<input type='Number'></td>
+				</tr>
+				<tr>
+					<td>No Fee</td><td><input type='Number' placeholder='no. of attendees'> x</td><td>$<input type='Number' placeholder='fee per attendee' value='0' Disabled> =</td><td>$<input type='Number' value='0' Disabled></td>
+				</tr>
+				<tr>
+					<td>No Show Income</td><td><input type='Number' placeholder='no. of attendees'> x</td><td>$<input type='Number' placeholder='fee per attendee'> =</td><td>$<input type='Number'></td>
+				</tr>
+				<tr>
+					<td>Other Income</td><td></td><td></td><td>$<input type='Number'></td>
+				</tr>
+				-->
+		
+		</section> <!--AttendeeFee End-->
+		<section id='step-7' name='SponsorsAndMore-s'>
+			<h2  class="StepTitle col-sm-12">Details</h2>
+
+			<form class='col-xs-12'>
+				<div class='col-sm-12'>
+					<h4>What is the dollar amount of fees that your organization received?</h4>
+					<input class='col-sm-12' type='Number' value='0' >
+				</div>
+				<div class='col-sm-12' >
+				<h4>Languages used</h4>
+				<table>
+					<tr>
+						<td><input type='checkbox'> English</td>
+						<td><input type='checkbox'> English</td>
+						<td><input type='checkbox'> Other <input type='text' placeholder='specify'></td>
+					</tr>
+				</table>
+			</div>
+			<div class='col-sm-12'>
+				<h4>Name of Sponsor</h4>
+				<input class='col-sm-12' type='text'>
+			</div>
+			<div class='col-sm-12'>
+				<h4>Name of Co-sponsors (if applicable)</h4>
+				<div><input class='col-sm-12'  name='csponsor1' type='text'></div>
+				<div><input class='col-sm-12'  name='csponsor2' type='text'></div>
+				<div><input class='col-sm-12'  name='csponsor3' type='text'></div>
+				<div><input class='col-sm-12'  name='csponsor4' type='text'></div>
+			</div>
+			</form>
+			
+			
+			
+		</section><!--SponsorsAndMore End-->
+	</div><!--Form888 End-->
+
+	  <!-- jQuery -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+   <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="../node_modules/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../node_modules/nprogress/nprogress.js"></script>
+    <!-- jQuery Smart Wizard -->
+    <!--<script src="../node_modules/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>-->
+    <!-- Custom Theme Scripts -->
+    <!-- <script src="../build/js/custom.min.js"></script> -->
+  </body>
+
+</html>
